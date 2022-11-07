@@ -1,0 +1,52 @@
+.ItemManagementModal {
+    //Overlay
+    &.overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .modal {
+            height: 500px;
+            width: 500px;
+            background-color: white;
+            //Darkmode
+            @media (prefers-color-scheme: dark) {
+                background-color: #212529;
+            }
+            border-radius: .25rem;
+            padding: 10px;
+
+            // display: flex;
+            .button-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                flex-direction: row-reverse;
+                margin-top: 10px;
+                button {
+                    display: flex;
+                    width: 10px;
+                    height: 10px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .edit-fields{
+              .field{
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+              }
+            }
+        }
+    }
+
+    //Modal
+}
